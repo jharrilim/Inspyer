@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -10,7 +11,6 @@ import { InformationFormComponent } from './components/nurse/information-form/in
 import { SelfCheckupComponent } from './components/patient/self-checkup/self-checkup.component';
 import { HomeComponent } from './components/common/home/home.component';
 import { RegisterComponent } from './components/common/register/register.component';
-
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { RegisterComponent } from './components/common/register/register.compone
     RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
