@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { RoutingModule } from './router/routing.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/common/login/login.component';
@@ -25,6 +25,7 @@ import { RegisterComponent } from './components/common/register/register.compone
   ],
   imports: [
     BrowserModule,
+    RoutingModule,
     NgbModule.forRoot()
   ],
   providers: [],
